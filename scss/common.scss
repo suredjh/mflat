@@ -1,0 +1,197 @@
+@charset 'utf-8';
+@import "./var.scss";
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "SourceHanSansCN-Normal";
+    src: url("../font/SourceHanSansCN-Normal.woff2") format("woff2"),
+            url("../font/SourceHanSansCN-Normal.woff") format("woff"),
+            url("../font/SourceHanSansCN-Normal.eot") format("embedded-opentype"),
+			url("../font/SourceHanSansCN-Normal.svg") format("svg");
+}
+body,html{
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-family: "SourceHanSansCN-Normal","Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	background-color: #f9f9f9;
+}
+a{
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    &.link {
+        &:hover {
+            color: blueviolet;
+            text-decoration: underline;
+        }
+    }
+}
+ul,dl{
+	list-style: none;
+	display: inline-block;
+}
+img{
+	display: block;
+	border: 0;
+	width: 100%;
+}
+button,input,textarea,select,option{
+	border: 0;
+	outline: 0
+}
+.main {
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.vmiddle {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.w100 {
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/** header style */
+.header-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: $head_height;
+    background: $back_color;
+    color: $head_font_color;
+}
+.header-c {
+    height: 100%;
+}
+.header-logo {
+    width: 200px;
+    height: 40px;
+    background: $var_back_color;
+    margin-top: ($head_height - 40px) / 2;
+}
+.header-navs {
+    width: 890px;
+    height: $head_height;
+    line-height: $head_height;
+    color: $head_font_color;
+    font-size: $head_font_size;
+    padding-left: 46px;
+}
+.header-nav-list {
+    height: $head_height;
+    padding: 0 22px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 46px;
+        height: 3px;
+        left: 50%;
+        margin-left: -23px;
+        bottom: 0;
+        background-color: transparent;
+    }
+    &:hover {
+        color: $head_font_hover_color;
+        &::after {
+            background-color: $head_font_hover_color;
+        }
+    }
+}
+.header-user {
+    height: $head_height;
+    line-height: $head_height;
+    cursor: pointer;
+}
+.header-user-list {
+    display: inline-block;
+    line-height: 1;
+    color: $login_btn_color;
+    &:hover {
+        color: $head_font_color;
+    }
+}
+.header-user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: $var_back_color;
+}
+/*** footer style ***/
+.footer-box {
+    background-color: $footer_bg_color;
+    color: $footer_main_font_color;
+    overflow: hidden;
+}
+.footer-c {
+    overflow: hidden;
+}
+.footer-navs {
+    padding-top: 25px;
+    padding-bottom: 47px;
+}
+.foot-link-line {
+    color: $footer_ind_font_color;
+    padding: 0 26px;
+}
+.link-navs {
+    padding-top: 14px;
+}
+.link-nav {
+    padding-right: 50px;
+    color: $footer_ind_font_color;
+}
+.footer-bot {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid #4e4e50;
+}
+.footer-right {
+    text-align: right;
+}
+.foot-logo1 {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin-top: 25px;
+    background-color: $var_back_color;
+}
+.foot-logo2 {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: $var_back_color;
+}
+.foot-inds {
+    padding-top: 20px;
+}
+.foot-ind-line {
+    color: $footer_ind_font_color;
+    padding: 0 30px;
+}
