@@ -1,0 +1,241 @@
+@charset 'utf-8';
+@import './var.scss';
+
+.index-banner {
+    height: 700px;
+    background-color: $var_back_color;
+    position: relative;
+}
+.banner-data {
+    position: absolute;
+    height: $banner_data_height;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: $footer_bg_color;
+}
+.banner-data-c {
+    height: $banner_data_height;
+    line-height: $banner_data_height;
+    text-align: left;
+}
+.banner-data-list {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    width: 24.6%;
+    vertical-align: middle;
+    color: $index_font_white;
+    padding-left: 32px;
+    font-size: 16px;
+    &:first-child {
+        padding-left: 0;
+    }
+}
+.bd-list-line {
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    right: 0;
+    top: 50%;
+    margin-top: -18px;
+    background-color: $banner_data_font_color;
+}
+.bd-list-title {
+    color: $banner_data_font_color;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+// 产品优势
+.index-prod, .index-ideas {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+}
+.index-con-box {
+    text-align: center;
+    overflow: hidden;
+}
+.index-prod-title {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.index-prod-list {
+    display: inline-block;
+    width: 19.6%;
+    padding: 0 40px;
+    overflow: hidden;
+    vertical-align: top;
+}
+.prod-list-img {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.prod-list-name {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.prod-list-ind {
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #999999;
+}
+
+.index-ideas {
+    height: 600px;
+    background-color: $var_back_color;
+    position: relative;
+}
+
+// 方案说明
+.index-ideas-c {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 60px;
+    z-index: 1;
+}
+.index-idea-title {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.index-idea-navs {
+    width: 410px;
+    height: 41px;
+    margin: 0 auto;
+    border-bottom: 1px solid #8a9c9e;
+    line-height: 40px;
+    text-align: center;
+}
+.index-idea-nav {
+    display: inline-block;
+    padding: 0 14px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: transparent;
+    }
+    &:hover, &.active {
+        color: $banner_data_font_color;
+        &::after {
+            background-color: $banner_data_font_color;
+        }
+    }
+}
+.index-idea-tabs {
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.index-idea-tab {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 18px;
+    padding: 3px 9px;
+    &:hover, &.acitve {
+        color: #ffffff;
+        background-color: $banner_data_font_color;
+    }
+}
+.index-idea-lists {
+    text-align: center;
+    padding-top: 40px;
+}
+.index-idea-list {
+    display: inline-block;
+    width: 218px;
+    height: 120px;
+    margin-right: 10px;
+    line-height: 1.5em;
+    border: 1px solid $index_font_white;
+    border-radius: 4px;
+    position: relative;
+    padding: 4px;
+    text-align: left;
+    color: $index_font_white;
+    vertical-align: top;
+}
+.index-idea-inds {
+    width: 228*4px;
+    margin: 0 auto;
+    padding-top: 30px;
+    line-height: 1.8em;
+    color: $index_font_white;
+}
+.index-try {
+    height: $index_try_height;
+    overflow: hidden;
+}
+.index-try-c {
+    height: $index_try_height;
+    line-height: $index_try_height;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+.index-try-ind {
+    font-size: 24px;
+    padding-right: 60px;
+}
+.index-try-ind-num {
+    font-size: 28px;
+    font-weight: 28px;
+}
+.index-try-btn {
+    display: inline-block;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 22px;
+    font-size: 16px;
+    background-color: $banner_data_font_color;
+}
+
+/********* pages **********/
+.page-banner {
+    height: 500px;
+}
+.page-list-c1 {
+    background-color: $page_bg_color1;
+}
+.page-list-c2 {
+    background-color: $page_bg_color2;
+}
+.page-func{
+    text-align: center;
+}
+.page-func-c {
+    width: 550px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.page-func-title {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.page-func-ind {
+    line-height: 1.8em;
+}
+.page-long-range {
+    padding: 40px 0;
+    .long-range {
+        
+    }
+}
+
