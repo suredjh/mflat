@@ -235,7 +235,157 @@
 .page-long-range {
     padding: 40px 0;
     .long-range {
-        
+        width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
     }
 }
+.long-range-img {
+    display: inline-block;
+    width: 570px;
+    height: 340px;
+    background-color: #cccccc;
+}
+.long-range-ind {
+    display: inline-block;
+    width: 420px;
+    height: 340px;
+    line-height: 340px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.range-ind-tag {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    background-color: $head_font_hover_color;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.range-ind-txt {
+    display: inline-block;
+    width: 300px;
+    line-height: 1.8em;
+    padding-left: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.range-ind-t {
+    color: #999999;
+}
+// 手机取证
+.page-prod-lists {
+    .index-prod-list {
+        width: 30%;
+        padding: 0 80px;
+    }
+}
+// 证据查询
+.page-check-banner {
+    min-height: 600px;
+    position: relative;
+}
+.page-check-c {
+    // position: absolute;
+    width: 660px;
+    min-height: 440px;
+    // left: 50%;
+    // top: 100px;
+    // margin-left: -330px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #000000;
+    box-shadow: 0 0 5px #cccccc;
+    padding: 0 45px;
+}
+.page-check-title {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 4px;
+    color: $head_font_hover_color;
+}
 
+// 主页面输入框样式
+.page-input-box {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    position: relative;
+    color: #ffffff;
+}
+.page-input-label {
+    display: inline-block;
+    width: 120px;
+    // padding-right: 20px;
+    color: #ffffff;
+}
+.page-input-required {
+    padding-right: 14px;
+    color: red;
+}
+.page-input-vals {
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid $login_btn_color;
+}
+.page-input-code {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 140px;
+    top: 50%;
+    margin-top: -15px;
+    background: #999999;
+}
+.page-input-val {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    // border-bottom: 1px solid $login_btn_color;
+    color: #ffffff;
+    // &:focus {
+    //     border-bottom-color: $head_font_hover_color;
+    // }
+}
+.page-input-btn {
+    width: 284px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: $head_font_hover_color;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.page-select-vals {
+
+    .page-input-val {
+        width: 300px;
+    }
+}
+.page-select-box {
+    display: inline-block;
+    width: 90px;
+    line-height: 1.5em;
+    position: relative;
+    text-align: center;
+    .page-select-val {
+        width: 100%;
+        height: 100%;
+    }
+}
+.page-select-drops {
+    position: absolute;
+    left: 0;
+    top: 100%;
+}

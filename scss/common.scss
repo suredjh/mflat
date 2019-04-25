@@ -118,7 +118,7 @@ button,input,textarea,select,option{
         bottom: 0;
         background-color: transparent;
     }
-    &:hover {
+    &:hover, &.active {
         color: $head_font_hover_color;
         &::after {
             background-color: $head_font_hover_color;
