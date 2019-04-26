@@ -406,3 +406,122 @@
         color: $head_font_hover_color;
     }   
 }
+// 资费标准
+.page-banner300 {
+    height: 300px;
+}
+.page-mc {
+    padding: 40px 0;
+    text-align: center;
+}
+.page-mc-list {
+    display: inline-block;
+    width: 500px;
+    height: 540px;
+    margin: 0 30px;
+    border-radius: 8px;
+    border: 1px solid $head_font_hover_color;
+    vertical-align: top;
+    text-align: center;
+}
+.mc-list-title {
+    padding: 20px 0;
+    font-size: 18px;
+}
+.mc-list-price {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    background-color: #f1f1f1;
+    color: $head_font_hover_color;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+.mc-list-pirce-num {
+    font-size: 20px;
+}
+.mc-list-select {
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 18px;
+    vertical-align: middle;
+}
+.mc-list-select-name {
+    padding-left: 18px;
+}
+.mc-list-label {
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid $login_btn_color;
+    position: relative;
+    .mc-list-label-c {
+        // display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        margin-left: -4px;
+        margin-top: -4px;
+        border-radius: 1px;
+        background-color: $head_font_hover_color;
+        display: none;
+    }
+    &::hover {
+        border-color: $head_font_hover_color;
+    }
+    &.active {
+        border-color: $head_font_hover_color;
+        .mc-list-label-c {
+            display: block;
+        }
+    }
+}
+.mc-list-select-price {
+    float: right;
+    padding-right: 40px;
+    color: $head_font_hover_color;
+}
+.mc-list-select-ind {
+    padding-left: 18px * 3;
+    padding-right: 40px;
+    text-align: left;
+    line-height: 1.8em;
+    padding-bottom: 25px;
+}
+.mc-list-btn {
+    width: 450px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+    border: 1px solid $head_font_hover_color;
+    &.active {
+        background-color: $head_font_hover_color;
+        color: #ffffff;
+    }
+}
+
+.page-mc-ind {
+    padding: 0 70px 40px 70px;
+    text-align: left;
+}
+.mc-ind-title-tag {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    background-color: #ff11ff;
+    border-radius: 100%;
+}
+// 关于平台
+.page-about-lists {
+    .index-prod-list {
+        width: 20%;
+    }
+}
