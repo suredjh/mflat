@@ -299,10 +299,11 @@
     margin-top: 100px;
     background-color: #000000;
     box-shadow: 0 0 5px #cccccc;
-    padding: 0 45px;
+    padding: 30px 45px;
+    // padding-bottom: 30px;
 }
 .page-check-title {
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 28px;
@@ -368,7 +369,7 @@
     cursor: pointer;
 }
 .page-select-vals {
-
+    cursor: pointer;
     .page-input-val {
         width: 300px;
     }
@@ -379,13 +380,29 @@
     line-height: 1.5em;
     position: relative;
     text-align: center;
-    .page-select-val {
-        width: 100%;
-        height: 100%;
+}
+.page-select-val {
+    width: 100%;
+    height: 100%;
+    &:hover {
+        .page-select-drops {
+            display: block;
+        }
     }
 }
 .page-select-drops {
     position: absolute;
+    width: 100%;
     left: 0;
     top: 100%;
+    text-align: center;
+    z-index: 1;
+    background-color: #000000;
+    box-shadow: 0 0 5px #f1f1f1;
+    display: none;
+}
+.select-val-list {
+    &:hover {
+        color: $head_font_hover_color;
+    }   
 }
