@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找回密码</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/page.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="page">
+            <div class="w100 authc ftop">
+                    <div class="login-tabs fcenter">
+                        <span class="login-tab active fcenter" data-type='person'>个人</span>
+                        <span class="login-tab fcenter" data-type='comp'>机构</span>
+                    </div>
+                    <div class="tabc" id="person">
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"> <span class="required">*</span> 用户名:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入您的用户名" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-phone"></span>手机号码:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入您的手机号码" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-card"></span>真实姓名:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入您的真实姓名" />
+                            </div>
+                        </div>
+                        <!-- <div class="w100 form-box fstart">
+                            <label for="" class="form-label">身份证正反面:</label>
+                        </div>
+                        <div class="w100 card-lib-t ftop">
+                            <div>*身份证上传说明</div>
+                            <div>1、请上传本人身份证正反面照片和手持身份证照片 2、上传文件格式支持png、jpg和jpeg 3、文件大小不超过3M</div>
+                            <div>4、手持身份证照片要求身份证上信息清晰可见; 手持证件人免冠，五官清晰，建议未化妆露出手臂。</div>
+                        </div> -->
+
+                        <div class="w100 form-box fcirst">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-file"></span>身份证正反面:</label>
+                            <div class="form-val">
+                                <div>
+                                    <div class="card-list ftm">
+                                        <div class="card-tag"><img src="../images/img/plus.png" alt="" class="img"></div>
+                                        <div class="card-name">身份证正反面</div>
+                                        <input type="file" class="form-file" />
+                                        <div class="m-loading">
+                                            <div class="m-loading-c">
+                                                <svg class="lds-spinner" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(30 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(60 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(90 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(120 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(150 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(180 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(210 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(240 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(270 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(300 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(330 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-list ftm">
+                                        <div class="card-tag"><img src="../images/img/plus.png" alt="" class="img"></div>
+                                        <div class="card-name">身份证正反面</div>
+                                        <input type="file" class="form-file" />
+                                        <div class="m-loading">
+                                            <div class="m-loading-c">
+                                                <svg class="lds-spinner" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(30 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(60 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(90 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(120 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(150 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(180 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(210 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(240 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(270 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(300 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g><g transform="rotate(330 50 50)">
+                                                    <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+                                                    </rect>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pcard-ind">
+                                    <div>*身份证上传说明</div>
+                                    <div>1、请上传本人身份证正反面照片</div>
+                                    <div>2、上传文件格式支持png、jpg和jpeg</div>
+                                    <div>3、文件大小不超过3M</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabc hide" id="comp">
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"> <span class="required">*</span> 用户名:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入您的用户名" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-comp"></span>邮箱地址:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入您的邮箱地址" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-user"></span>企业名称:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入企业名称" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-user"></span>统一社会信用代码:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入统一社会信用代码" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-phone"></span>联系人姓名:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入联系人姓名" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fstart">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-phone"></span>联系人电话:</label>
+                            <div class="form-val">
+                                <input type="text" class="form-input" placeholder="请输入联系人手机号码" />
+                            </div>
+                        </div>
+                        <div class="w100 form-box fcirst">
+                            <label for="" class="form-label"><span class="form-label-icon form-label-icon-file"></span>相关资质:</label>
+                            <div class="form-val ftop">
+                                <div class="card-list ftm">
+                                    <div class="card-tag"><img src="../images/img/plus.png" alt="" class="img"></div>
+                                    <div class="card-name">上传营业执照</div>
+                                    <input type="file" class="form-file" />
+                                    <div class="m-loading">
+                                        <div class="m-loading-c">
+                                            <svg class="lds-spinner" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="rotate(0 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(30 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(60 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(90 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(120 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(150 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(180 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(210 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(240 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(270 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(300 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g><g transform="rotate(330 50 50)">
+                                                <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill="#8cd0e5">
+                                                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+                                                </rect>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pcard-ind">
+                                    <div>*相关资质文件上传说明</div>
+                                    <div>1、请上传营业执照</div>
+                                    <div>2、上传文件格式支持png、jpg和jpeg</div>
+                                    <div>3、文件大小不超过3M</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fbtn fcenter">注册</div>
+                </div>
+
+    </div>
+    <script>
+        $(function(){
+
+            $('.login-tab').on('click', function () {
+
+                if ($(this).hasClass('active')) return false;
+
+                var id = $(this).attr('data-type');
+
+                var $ctab = $('#' + id);
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                $ctab.siblings('.tabc').addClass('hide');
+
+                $ctab.removeClass('hide');
+            })
+
+            var showCheckRes = function (_this, msg) {
+                if (typeof _this !== 'object') return false;
+                msg = msg || '请输入正确的值';
+                $(_this).siblings('.input-error-box').removeClass('tipper').addClass('error').removeClass('hidden').find('.error-msg').html(msg);
+            };
+
+            var hiddenShowRes = function (_this) {
+                if (typeof _this !== 'object') return false;
+                return $(_this).addClass('hidden');
+            };
+
+            var showAlert = function (msg, dur, type) {
+
+                if ($('.alert').length > 0) return false;
+
+                dur = dur || 2000;
+
+                msg = msg || '发生错误';
+
+                type = type || 'info';
+
+                var cname = 'alert ';
+
+                switch (type) {
+                    case 'error':
+                        cname += 'alert-error';
+                    break;
+                    case 'warning':
+                        cname += 'alert-warning';
+                    break;
+                    default:
+                    break;
+                }
+
+                var timer = setTimeout(function () {
+                    var $alert = $('.alert');
+                    if ($alert.length > 0) $alert.fadeOut(200).remove();
+                    timer && clearTimeout(timer);
+                }, dur);
+
+                $('body').append('<div class="'+cname+'">'+ msg +'</div>');
+
+            };
+
+            var scrollIntoView = function (_this) {
+                if (typeof _this !== 'object') return false;
+                var len = _this.length;
+                if (len === 0) return false;
+                _this.focus();
+                if (!!_this[0].scrollIntoView) {
+                    for (var i=0; i < len; i++) {
+                        _this[i].scrollIntoView();
+                    }
+                }
+            };
+
+            showAlert();
+
+
+            // scrollIntoView
+
+            // document.getElementById('#username').scrollIntoView();
+
+            // 是不是处于中文输入法的时候
+            // var doing = false;
+
+            // document.getElementsByClassName('common-check-len')[0].addEventListener('compositionstart', function (e) {
+            //     doing=true;
+            //     console.log(e)
+            // }, false)
+
+
+            // document.getElementsByClassName('common-check-len')[0].addEventListener('compositionend',function(e){
+            //     doing=false;
+            //     console.log(e);
+            // },false);
+
+
+            function ChangInputHanlde (el) {
+                var showInput = false;
+
+                $(el).on({
+                    compositionstart: function (e) {
+                        showInput = true;
+                    },
+                    compositionend: function (e) {
+                        showInput = false;
+                        changInputHanlde(e, this);
+                    },
+                    input: function (e) {
+                        !showInput && changInputHanlde(e, this);
+                    }
+                });
+
+                function changInputHanlde(e, _this) {
+
+                    var val = $(_this).val(), len = val.length, _len = parseInt($(_this).attr('data-len') || 0), str = $(this).attr('data-str');
+
+                    if (str === val) return false;
+
+                    // 剩余可输入的字符串长度
+
+                    var mlen = _len - len, tag = '';
+
+                    if (mlen > 0) {
+                        tag = '剩余' + mlen + '个字符可输入';
+                    } else {
+                        val = val.substr(0, _len);    
+                    }
+
+                    $(_this).val(val);
+
+                    $(_this).siblings('.input-error-box').removeClass('error').addClass('tipper').removeClass('hidden').find('.error-msg').html(tag);
+                }
+
+            }
+
+            var $check = $('.common-check-len'), len = $check.length;
+
+            for (var i = 0; i < len; i++) {
+                (function(el){ ChangInputHanlde(el);})($check[i])
+            }
+        })
+    </script>
+</body>
+</html>
