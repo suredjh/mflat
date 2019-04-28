@@ -1,0 +1,539 @@
+@import "./var.scss";
+.works-box {
+    position: relative;
+    min-height: 778px;
+    overflow: hidden;
+}
+
+// 左侧导航样式
+.pnavs {
+    position: absolute;
+    width: 220px;
+    height: 780px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+}
+.pnav {
+    cursor: pointer;
+    width: 100%;
+}
+.pnav-list {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    &:hover, &.active {
+        .pnav-list-title {
+            background: #ffe9eb;
+            color: #fe3032;
+            border-left-color: #fe3032;
+        }
+        .pcnvs {
+            display: block;
+        }
+    }
+}
+.pnav-list-title {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-left: 3px solid transparent;
+    transform: all 0.2s;
+}
+.pcnvs, .bnavs {
+    display: none;
+    transition: all 0.2s;
+}
+.pcnav-list {
+    font-size: 14px;
+    &:hover, &.active {
+        .pcnav-list-title {
+            background: #f6f6f6;
+            color: #fe3032;
+        }
+        .bnavs {
+            display: block;
+        }
+    }
+}
+.pcnav-list-title, .bnav-list-title {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    border-left: 3px solid transparent;
+    transform: all 0.2s;
+}
+.bnav-list-title {
+    font-size: 12px;
+    padding-left: 100px;
+    text-align: left;
+}
+.bnav-list {
+    font-size: 12px;
+    &:hover, &.active {
+        .bnav-list-title {
+            color: #fe3032;
+        }
+    }
+}
+
+
+
+// 新的侧边栏
+.page-aside {
+    position: absolute;
+    width: 220px;
+    height: 780px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+}
+.page-user {
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.page-user-img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    border-radius: 100%;
+}
+.page-user-name {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.page-user-edit {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #cccccc;
+}
+.page-navs, .page-nav-list {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+.page-nav-list {
+    &.active, &:hover {
+        .page-nav-drops {
+            display: block;
+        }
+        .page-nav-name {
+            background-color: #d7d7d7;
+        }
+    }
+}
+.page-nav-name {
+    padding-left: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.page-nav-name-tab {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background-color: #cccccc;
+    vertical-align: middle;
+}
+.page-nav-drop-list {
+    font-size: 12px;
+    height: 2em;
+    line-height: 2em;
+    padding-left: 66px;
+    border-left: 2px solid transparent;
+    &.active {
+        border-left-color: $head_font_hover_color;
+        color: $head_font_hover_color;
+    }
+    &:hover {
+        color: $head_font_hover_color;
+    }
+}
+
+.plists-amb {
+    height: 36px;
+    line-height: 39px;
+    padding: 0 10px;
+    color: #333333;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+.plists-amb-title {
+    color: #999999;
+}
+.plists-amb-btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: $head_font_hover_color;
+    line-height: 1.1;
+    border-radius: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+// 列表样式
+.works-c{
+    width: 100%;
+    padding-left: 230px;
+}
+.plists {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    padding: 30px;
+}
+.plist-top {
+    height: 51px;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.plist-top2 {
+    @extend .plist-top;
+    height: 61px;
+}
+.work-search-box {
+    width: 500px;
+    height: 38px;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    position: relative;
+}
+.work-search-input {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    padding-left: 15px;
+    border-radius: 8px;
+}
+.work-search-btn {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+    background: url(../images/img/i1.png) center center no-repeat;
+}
+.button {
+    width: 112px;
+    height: 34px;
+    color: #ffffff;
+    background: #fe3032;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.table-titles, .table-tds {
+    width: 100%;
+}
+.table-titles {
+    height: 52px;
+    background: #ffffff;
+    border-bottom: 2px solid #fe3032;
+}
+.table-th {
+    text-align: center;
+    font-size: 14px;
+}
+.table-tds {
+    min-height: 51px;
+    max-height: 100px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.table-td {
+    display: table-cell;
+    text-align: center;
+    font-size: 12px;
+    word-break: break-all;
+    color: #333333;
+}
+.table-td-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+.table-td-ell {
+    display: inline-block;
+    width: 100%;
+    height: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.td-status-blue {
+    color: blueviolet;
+}
+.td-status-origin {
+    color: origin;
+}
+.td-status-red {
+    color: #fe3032;
+}
+// 作品详情页部分样式
+// .works-c2 {
+//     padding: 15px;
+//     padding-left: 245px;
+// }
+.work-detail-box {
+    position: relative;
+    min-height: 240px;
+    overflow: hidden;
+    padding: 15px;
+    background: #ffffff;
+}
+.work-dimg {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 126px;
+    height: 187px;
+    background: #333333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.work-dc {
+    padding-left: 155px;
+    overflow: hidden;
+}
+.work-dc-title {
+    font-size: 24px;
+}
+.work-dc-ind {
+    font-size: 12px;
+    color: #d7d7d7;
+}
+.work-dbox {
+    padding-top: 24px;
+}
+.db-list {
+    float: left;
+    width: 33.33%;
+    line-height: 30px;
+    color: #333333;
+}
+.db-list-label, .db-list-val {
+    float: left;
+}
+.db-list-val {
+    max-width: 70%;
+}
+.db-list-label {
+    padding-right: 4px;
+}
+// 账号信息类型表单
+.work-form-box {
+    padding-top: 30px;
+    clear: both;
+}
+.work-form-label, .work-form-val {
+    float: left;
+}
+.work-form-label {
+    width: 300px;
+    height: 48px;
+    line-height: 48px;
+    text-align: right;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+.work-form-input {
+    width: 500px;
+    height: 48px;
+    border: 1px solid #d7d7d7;
+    padding-left: 15px;
+    border-radius: 8px;
+    &:disabled {
+        background-color: #d7d7d7;
+    }
+}
+.work-form-img {
+    width: 290px;
+    min-height: 50px;
+    overflow: hidden;
+    position: relative;
+    // background: #f6f6f6;
+}
+.work-form-file {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.work-form-btn {
+    width: 112px;
+    height: 34px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 34px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    &.ensure {
+        background: $head_font_hover_color;
+        color: #ffffff;
+    }
+    &.cancel {
+        color: #333333;
+        background: #d7d7d7;
+    }
+}
+
+// 侵权举报样式表
+.report-form-box {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    box-shadow: 0 0 5px #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.report-form-top {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+}
+.report-form-title {
+    font-size: 26px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.report-form-ind {
+    color: #999999;
+}
+.report-form-wrap {
+    border-top: 1px solid #d7d7d7;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    clear: both;
+    .report-form-title {
+        font-size: 24px;
+        padding: 15px 0;
+    }
+}
+.report-form-list {
+    padding-top: 20px;
+    clear: both;
+}
+.report-form-label, .report-form-val {
+   float: left;
+}
+.report-form-val {
+    position: relative;
+    min-height: 48px;
+}
+.report-form-label {
+    width: 210px;
+    height: 48px;
+    line-height: 48px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 15px;
+}
+.report-form-label-name {
+    display: inline-block;
+    width: 118px;
+    text-align: right;
+}
+.report-form-input, .report-form-select-box{
+    width: 540px;
+    height: 48px;
+    padding-left: 20px;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 16px;
+    &:focus {
+        border-bottom-color: #fe3032;
+    }
+}
+.report-form-select-box {
+    position: relative;
+    .report-form-select {
+        width: 100%;
+        height: 100%;
+        font-size: inherit;
+    }
+}
+.form-select-vals {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 105%;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 0 5px #eeeeee;
+    z-index: 9;
+    cursor: pointer;
+    .select-val {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        vertical-align: middle;
+        border-bottom: 1px solid #f1f1ff;
+        &:last-child {
+            border-bottom-color: transparent;
+        }
+        &:hover {
+            background: #e1e8ee;
+        }
+    }
+    .select-val-name {
+        display: inline-block;
+        width: 80%;
+        height: 1.5em;
+        padding-left: 20px;
+    }
+}
+
+.report-form-select {
+    background: url(../images/img/sanj.png) 96% center no-repeat;
+}
+.report-form-textarea {
+    @extend .report-form-input;
+    min-height: 100px;
+    resize: none;
+}
+.report-form-file-box {
+    width: 300px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    color: #999999;
+    cursor: pointer;
+    &:hover {
+        color: #fe3032;
+    }
+}
+.report-form-file {
+    @extend .work-form-file;
+    cursor: pointer;
+}
+.report-form-ops {
+    padding-top: 10px;
+    padding-left: 64px;
+}
+.report-form-btn {
+    @extend .work-form-btn;
+    border-radius: 0;
+}
