@@ -242,6 +242,37 @@
     color: #ffffff;
     letter-spacing: 2px;
 }
+.page-banner-show {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+}
+.page-banner-show-left {
+    text-align: center;
+    width: 540px;
+    color: #ffffff;
+    .show-left-title {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .show-left-ind {
+        padding-top: 6px;
+        padding-bottom: 12px;
+        color: #eeeeee;
+    }
+    .show-left-btn1 {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        border-radius: 4px;
+        background-color: $head_font_hover_color;
+        opacity: 0.8;
+        margin: 0 auto;
+    }
+}
 .page-list-c1 {
     background-color: $page_bg_color1;
 }
@@ -556,8 +587,9 @@
     width: 1em;
     height: 1em;
     margin-right: 5px;
-    background-color: #ff11ff;
+    // background-color: #ff11ff;
     border-radius: 100%;
+    overflow: hidden;
 }
 // 关于平台
 .page-about-lists {
