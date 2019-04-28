@@ -344,17 +344,19 @@ button,input,textarea,select,option{
     left: 0;
     top: 0;
     z-index: 2;
-    height: $head_height;
-    background: $back_color;
+	height: $head_height;
+	// overflow: hidden;
+    // background: $back_color;
     color: $head_font_color;
 }
 .header-c {
-    height: 100%;
+	height: 100%;
 }
 .header-logo {
     width: 200px;
-    height: 40px;
-    background: $var_back_color;
+	height: 40px;
+	overflow: hidden;
+    // background: $var_back_color;
     margin-top: ($head_height - 40px) / 2;
 }
 .header-navs {
@@ -405,7 +407,7 @@ button,input,textarea,select,option{
 .header-user-icon {
     width: 30px;
     height: 30px;
-    background-color: $var_back_color;
+    // background-color: $var_back_color;
 }
 /*** footer style ***/
 .footer-box {
@@ -446,14 +448,14 @@ button,input,textarea,select,option{
     width: 200px;
     height: 40px;
     margin-top: 25px;
-    background-color: $var_back_color;
+    // background-color: $var_back_color;
 }
 .foot-logo2 {
     display: inline-block;
-    width: 200px;
-    height: 40px;
+    width: 350px;
+    height: 22px;
     margin-top: 20px;
-    background-color: $var_back_color;
+    // background-color: $var_back_color;
 }
 .foot-inds {
     padding-top: 20px;
@@ -532,16 +534,16 @@ button,input,textarea,select,option{
 			}
 		}
 		.info-input-acc{
-			background-image: url(../images/0321/8.png);
-			&:focus{
-				background-image: url(../images/0321/8r.png);
-			}
+			background-image: url(../images/p1.png);
+			// &:focus{
+			// 	background-image: url(../images/0321/8r.png);
+			// }
 		}
 		.info-input-pw{
-			background-image: url(../images/0321/9.png);
-			&:focus{
-				background-image: url(../images/0321/9r.png);
-			}
+			background-image: url(../images/p2.png);
+			// &:focus{
+			// 	background-image: url(../images/0321/9r.png);
+			// }
 		}
 		.tcode{
 			width: 270px;
@@ -653,7 +655,7 @@ button,input,textarea,select,option{
     height: 40px;
     margin: 0 auto;
     margin-top: 44px;
-    background-color: #ccc;
+    // background-color: #ccc;
 }
 .page-login-title-ind {
     padding-top: 10px;

@@ -2,7 +2,9 @@
 @import './var.scss';
 
 .index-banner {
-    height: 700px;
+    min-height: 400px;
+    // height: 700px;
+    overflow: hidden;
     background-color: $var_back_color;
     position: relative;
 }
@@ -72,9 +74,15 @@
 .prod-list-img {
     width: 100px;
     height: 100px;
+    line-height: 100px;
     background-color: #f1f1f1;
     border-radius: 100%;
     margin: 0 auto;
+    text-align: center;
+    .img {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 .prod-list-name {
     padding-top: 30px;
@@ -90,6 +98,10 @@
     height: 600px;
     background-color: $var_back_color;
     position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg4.png);
+    background-size: 100% 100%;
 }
 
 // 方案说明
@@ -180,6 +192,10 @@
 .index-try {
     height: $index_try_height;
     overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg7.png);
+    background-size: 100% 100%;
 }
 .index-try-c {
     height: $index_try_height;
@@ -208,7 +224,23 @@
 
 /********* pages **********/
 .page-banner {
-    height: 500px;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    // height: 500px;
+}
+.page-banner-txt {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
 }
 .page-list-c1 {
     background-color: $page_bg_color1;
@@ -242,9 +274,13 @@
 }
 .long-range-img {
     display: inline-block;
-    width: 570px;
-    height: 340px;
-    background-color: #cccccc;
+    width: 574px;
+    height: 327px;
+    // background-color: #cccccc;
+}
+.long-range-img1 {
+    width: 480px;
+    height: 320px;
 }
 .long-range-ind {
     display: inline-block;
@@ -287,6 +323,8 @@
 .page-check-banner {
     min-height: 600px;
     position: relative;
+    background: url(../images/bg.png) center center no-repeat;
+    background-size: 100% 100%;
 }
 .page-check-c {
     // position: absolute;
@@ -408,7 +446,9 @@
 }
 // 资费标准
 .page-banner300 {
-    height: 300px;
+    min-height: 100px;
+    overflow: hidden;
+    // height: 300px;
 }
 .page-mc {
     padding: 40px 0;
