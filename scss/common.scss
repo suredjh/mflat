@@ -314,6 +314,20 @@ button,input,textarea,select,option{
 	}
 }
 
+.back-top {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 80px;
+	right: 40px;
+	border-radius: 16px;
+	cursor: pointer;
+	z-index: 19;
+	&:hover {
+		box-shadow: 0 0 5px #ccc;
+	}
+}
+
 
 .alert {
     position: fixed;
@@ -347,7 +361,9 @@ button,input,textarea,select,option{
 	height: $head_height;
 	// overflow: hidden;
     // background: $back_color;
-    color: $head_font_color;
+	color: $head_font_color;
+	background: url(../images/bg70.png) center center no-repeat;
+	background-size: 100% 100%;
 }
 .header-c {
 	height: 100%;
@@ -678,7 +694,9 @@ button,input,textarea,select,option{
 .page-login-ind {
 	color: #aeb0b3;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-size: 12px;
 }
 
 .custom-check-box {

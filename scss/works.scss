@@ -110,13 +110,27 @@
     display: inline-block;
     height: 40px;
     line-height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+    &:hover {
+        color: $head_font_hover_color;
+        .page-user-edit {
+            background-image: url(../images/edit_a.png);
+        }
+    }
 }
 .page-user-edit {
     display: inline-block;
     width: 20px;
     height: 20px;
     vertical-align: middle;
-    background-color: #cccccc;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/edit.png);
+    // &:hover {
+    //     background-image: url(../images/edit_a.png);
+    // }
+    // background-color: #cccccc;
 }
 .page-navs, .page-nav-list {
     width: 100%;
@@ -362,6 +376,9 @@
     &:disabled {
         background-color: #d7d7d7;
     }
+}
+.work-form-input-pass {
+    background: url(../images/pass.png) 88% center no-repeat;
 }
 .work-form-img {
     width: 290px;

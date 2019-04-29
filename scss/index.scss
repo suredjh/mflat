@@ -100,7 +100,7 @@
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/bg4.png);
+    background-image: url(../images/bg8.png);
     background-size: 100% 100%;
 }
 
@@ -126,6 +126,7 @@
     border-bottom: 1px solid #8a9c9e;
     line-height: 40px;
     text-align: center;
+    color: #ffffff;
 }
 .index-idea-nav {
     display: inline-block;
@@ -153,6 +154,7 @@
     text-align: center;
     padding-top: 10px;
     cursor: pointer;
+    color: #ffffff;
 }
 .index-idea-tab {
     display: inline-block;
@@ -170,11 +172,12 @@
 }
 .index-idea-list {
     display: inline-block;
-    width: 218px;
+    width: 240px;
     height: 120px;
     margin-right: 10px;
     line-height: 1.5em;
-    border: 1px solid $index_font_white;
+    // border: 1px solid $index_font_white;
+    background: url(../images/r2.png) center center no-repeat;
     border-radius: 4px;
     position: relative;
     padding: 4px;
@@ -194,7 +197,7 @@
     overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/bg7.png);
+    background-image: url(../images/bg1.png);
     background-size: 100% 100%;
 }
 .index-try-c {
@@ -214,12 +217,14 @@
 }
 .index-try-btn {
     display: inline-block;
-    width: 150px;
+    width: 140px;
     height: 44px;
     line-height: 44px;
-    border-radius: 22px;
+    // border-radius: 22px;
     font-size: 16px;
-    background-color: $banner_data_font_color;
+    // background-color: $banner_data_font_color;
+    background: url(../images/r1.png) center center no-repeat;
+    background-size: 100% 100%;
 }
 
 /********* pages **********/
@@ -246,32 +251,66 @@
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 20px;
+    bottom: 40px;
+}
+.page-banner-show2 {
+    position: absolute;
+    width: 17.2%;
+    overflow: hidden;
+    bottom: 0;
+    left: 670px;
+}
+.page-banner-show3 {
+    position: absolute;
+    width: 10.1%;
+    overflow: hidden;
+    bottom: 10px;
+    left: 400px;
 }
 .page-banner-show-left {
     text-align: center;
     width: 540px;
     color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
     .show-left-title {
         font-size: 28px;
         font-weight: bold;
         letter-spacing: 1px;
     }
     .show-left-ind {
-        padding-top: 6px;
-        padding-bottom: 12px;
+        padding-top: 16px;
+        padding-bottom: 32px;
         color: #eeeeee;
     }
     .show-left-btn1 {
         width: 100px;
         height: 30px;
+        margin: 0 auto;
         line-height: 30px;
         font-size: 12px;
         border-radius: 4px;
         background-color: $head_font_hover_color;
         opacity: 0.8;
-        margin: 0 auto;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
     }
+    .show-left-bot {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+}
+.page-banner-show-right {
+    color: #ffffff;
+    width: 500px;
+    text-align: left;
+}
+.show-right-list {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 1.8em;
 }
 .page-list-c1 {
     background-color: $page_bg_color1;
@@ -323,14 +362,16 @@
 }
 .range-ind-tag {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 100%;
-    background-color: $head_font_hover_color;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
+    width: 70px;
+    // height: 60px;
+    overflow: hidden;
+    vertical-align: middle;
+    // line-height: 50px;
+    // border-radius: 100%;
+    // background-color: $head_font_hover_color;
+    // text-align: center;
+    // font-weight: bold;
+    // font-size: 24px;
 }
 .range-ind-txt {
     display: inline-block;
@@ -366,10 +407,15 @@
     // margin-left: -330px;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 20px;
     background-color: #000000;
     box-shadow: 0 0 5px #cccccc;
     padding: 30px 45px;
     // padding-bottom: 30px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url(../images/q1.png);
+    background-size: 100% 100%;
 }
 .page-check-title {
     // padding-top: 40px;
@@ -453,6 +499,8 @@
 .page-select-val {
     width: 100%;
     height: 100%;
+    background: url(../images/bot.png) 90% center no-repeat;
+    background-size: 16px auto;
     &:hover {
         .page-select-drops {
             display: block;
