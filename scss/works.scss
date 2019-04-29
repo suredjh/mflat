@@ -157,8 +157,16 @@
     width: 20px;
     height: 20px;
     margin-right: 6px;
-    background-color: #cccccc;
+    // background-color: #cccccc;
     vertical-align: middle;
+    background: url(../images/muser.png) center center no-repeat;
+    background-size: 18px auto;
+    &.files {
+        background-image: url(../images/files.png);
+    }
+    &.safe {
+        background-image: url(../images/safe.png);
+    }
 }
 .page-nav-drop-list {
     font-size: 12px;
@@ -378,7 +386,7 @@
     }
 }
 .work-form-input-pass {
-    background: url(../images/pass.png) 88% center no-repeat;
+    background: url(../images/pass.png) 94% center no-repeat;
 }
 .work-form-img {
     width: 290px;
